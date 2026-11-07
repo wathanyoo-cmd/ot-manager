@@ -9,7 +9,7 @@ body{margin:0;background:#f2f6fa;color:#102a43;font-family:system-ui,sans-serif}
 <div><label>สถานะ</label><select id="status"><option>ปกติ</option><option>ลาป่วย</option><option>ลากิจ</option><option>ลาพักร้อน</option><option>ขาดงาน</option></select></div>
 <div><label>เวลาเข้า</label><input id="start" type="time" value="08:00"></div><div><label>เลิกปกติ</label><input id="end" type="time" value="17:00"></div>
 <div><label>เริ่ม OT เช้า</label><input id="morning" type="time"></div><div><label>เวลาออกจริง</label><input id="actual" type="time"></div>
-<div><label>ค่าแรงรายวัน</label><input id="wage" type="number" value="0"></div><div><label>ตัวคูณ OT</label><input id="mult" type="number" value="1.5" step=".1"></div></div>
+<div><label>ค่าแรงรายวัน</label><input id="wage" type="number" value="600"></div><div><label>ตัวคูณ OT</label><input id="mult" type="number" value="1.5" step=".1"></div></div>
 <div class="stats"><div class="stat">OT เช้า<b id="mout">0:00</b></div><div class="stat">OT เย็น<b id="eout">0:00</b></div><div class="stat">OT รวม<b id="tout">0:00</b></div><div class="stat">เงิน OT<b id="pout">฿0.00</b></div></div>
 <button onclick="save()">บันทึก Cloud</button><button onclick="calc()">คำนวณ</button><p id="msg" class="muted"></p></section>
 <section class="card"><h3>สรุปรายเดือน</h3><div id="summary" class="muted">ยังไม่ได้โหลดข้อมูล</div><div id="records"></div></section>
